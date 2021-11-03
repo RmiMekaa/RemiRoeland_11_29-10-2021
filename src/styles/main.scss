@@ -1,0 +1,54 @@
+@import './variables/colors.scss';
+@import './components/Header.scss';
+@import './components/Banner.scss';
+@import './components/Card.scss';
+@import './components/HousingsList.scss';
+@import './components/Footer.scss';
+@import './components/Carousel.scss';
+@import './components/Dropdown.scss';
+@import './components/Owner.scss';
+@import './components/HousingResume.scss';
+@import './pages/About.scss';
+@import './pages/ErrorPage.scss';
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  margin: auto;
+  padding: 20px 20px 0 20px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: 30px 50px 0 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    padding: 40px 100px 0 100px;
+  }
+}
+
+// Fix footer to the bottom ↓
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex-grow: 1;
+}

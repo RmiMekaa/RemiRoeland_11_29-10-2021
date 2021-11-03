@@ -1,0 +1,78 @@
+.carousel {
+  position: relative;
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  height: 255px;
+  border-radius: 10px;
+  background-color: $primary-color;
+  margin-bottom: 15px;
+  & img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .carousel {
+    height: 415px;
+    margin-bottom: 30px;
+  }
+}
+
+// ----- CONTROLS ----- //
+.controls {
+  position: absolute;
+  padding: 0 6px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & .button {
+    height: 20px;
+    width: 12px;
+    border: none;
+    background: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    &__prev {
+      background-image: url('../../assets/arrowLeft.png');
+    }
+    &__next {
+      background-image: url('../../assets/arrowRight.png');
+    }
+  }
+  &__counter {
+    display: none;
+    color: white;
+    align-self: flex-end;
+    padding-bottom: 25px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .controls {
+    padding: 0 12px;
+    & .button {
+      height: 40px;
+      width: 24px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .controls {
+    padding: 0 24px;
+    & .button {
+    height: 80px;
+    width: 48px;
+    }
+    &__counter {
+      display: block;
+    }
+  }
+}

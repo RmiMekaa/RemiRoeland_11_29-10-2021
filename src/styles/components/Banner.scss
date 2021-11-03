@@ -1,0 +1,56 @@
+.banner {
+  margin-top: 16px;
+  padding: 32px 16px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3); // Used as opacity layer for background image
+  &__home {
+    background-image: url('../../assets/landscape.png');
+    height: 111px;
+  }
+  &__about {
+    background-image: url('../../assets/aboutBanner.png');
+    height: 223px;
+  }
+  & h1 {
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner {
+    &__home {
+      margin-top: 32px;
+      height: 180px;
+      justify-content: center;
+    }
+    &__about {
+      margin-top: 24px;
+    }
+    & h1 {
+      font-size: 36px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner {
+    &__home {
+      margin-top: 63px;
+      height: 223px;
+      justify-content: center;
+    }
+    &__about {
+      margin-top: 44px;
+    }
+    & h1 {
+      font-size: 48px;
+    }
+  }
+}

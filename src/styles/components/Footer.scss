@@ -1,0 +1,32 @@
+.footer {
+  margin-top: 20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  background-color: black;
+  height: 209px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &__text {
+    margin-top: 46px;
+    color: white;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    margin-top: 50px;
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    margin-top: 60px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

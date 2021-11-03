@@ -1,0 +1,27 @@
+.owner {
+  display: flex;
+  align-items: center;
+  text-align: right;
+  gap: 10px;
+  & h3 {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  & img {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .owner {
+    & h3 {
+      font-size: 18px;
+    }
+    & img {
+      height: 64px;
+      width: 64px;
+    }
+  }
+}

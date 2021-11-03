@@ -1,0 +1,55 @@
+.housingResume {
+  color: $primary-color;
+  & article {
+    & h1 {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    & span {
+      margin-top: 5px;
+      font-size: 14px;
+    }
+  }
+  & aside {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+  & .dropdowns {
+    min-height: 500px;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .housingResume {
+    display: flex;
+    flex-wrap: wrap;
+    & article {
+      width: 70%;
+      & h1 {
+        font-size: 36px;
+      }
+      & span {
+        font-size: 18px;
+      }
+    }
+    & aside {
+      flex-direction: column;
+      align-items: flex-end;
+      margin-top: 0;
+      width: 30%;
+    }
+    & .dropdowns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 76px;
+    }
+  }
+}
