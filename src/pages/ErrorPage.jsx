@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
-class ErrorPage extends Component{
-
+class ErrorPage extends Component {
   render() {
-    return <h1>404</h1>
+    return (
+      <main className="errorPage">
+        <h1 className="errorPage__heading">404</h1>
+        <span className="errorPage__text">Oups! La page que vous demandez n'existe pas.</span>
+        <Link className="errorPage__link" to="/">Retourner sur la page d'accueil</Link>
+      </main>
+    );
   }
 }
 

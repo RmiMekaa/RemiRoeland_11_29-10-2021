@@ -1,9 +1,26 @@
 import React, { Component } from 'react';
+import Carousel from '../components/Carousel';
+import Description from '../components/Description';
+import data from '../data/data.json';
 
-class Housing extends Component{
+class Housing extends Component {
+  constructor(props) {
+    super(props);
+    this.data = this.getData();
+    this.render();
+  }
 
+  getData() {
+    return data.find((housing) => housing.id === this.props.match.params.id);
+  }
+  
   render() {
-    return <h1>Logement</h1>
+    return (
+      <main className="main_housing">
+        <Carousel pictures={this.data.pictures} />
+        <Description data={this.data} />
+      </main>
+    );
   }
 }
 
