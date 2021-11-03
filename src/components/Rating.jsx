@@ -12,10 +12,10 @@ class Rating extends React.Component {
   setRating() {
     const stars = [];
     for (let i=this.props.rating; i > 0; i--) {
-      stars.push(<img key={`${'starFull'}-${i}`} src={starFull} alt="rating" />)
+      stars.push(<img className='star' key={`${'starFull'}-${i}`} src={starFull} alt="rating" />)
     }
     for(let i=0; i < 5 - this.props.rating; i++) {
-      stars.push(<img key={`${'starEmpty'}-${i}`} src={starEmpty} alt="rating" />)
+      stars.push(<img className='star' key={`${'starEmpty'}-${i}`} src={starEmpty} alt="rating" />)
     }
     return stars;
   }
