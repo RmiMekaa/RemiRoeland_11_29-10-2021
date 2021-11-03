@@ -14,6 +14,20 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .owner {
+    gap: 10px;
+    & h3 {
+      font-size: 14px;
+    }
+    & img {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+    }
+  }  
+}
+
 @media screen and (min-width: 1200px) {
   .owner {
     & h3 {

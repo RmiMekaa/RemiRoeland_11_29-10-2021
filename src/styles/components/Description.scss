@@ -1,13 +1,30 @@
-.housingResume {
+.description {
   color: $primary-color;
   & article {
     & h1 {
       font-size: 18px;
       font-weight: 500;
     }
-    & span {
+    & .location {
       margin-top: 5px;
       font-size: 14px;
+    }
+    & .tags {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 5px;
+      column-gap: 10px;
+      & .tag {
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        color: white;
+        height: 18px;
+        padding: 0 24px;
+        border-radius: 5px;
+        background-color: $primary-color;
+      }
     }
   }
   & aside {
@@ -28,7 +45,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .housingResume {
+  .description {
     display: flex;
     flex-wrap: wrap;
     & article {
@@ -36,8 +53,17 @@
       & h1 {
         font-size: 36px;
       }
-      & span {
+      & .location {
         font-size: 18px;
+      }
+      & .tags {
+        margin-top: 20px;
+        & .tag {
+          font-size: 14px;
+          height: 25px;
+          padding: 0 35px;
+          border-radius: 10px;
+        }
       }
     }
     & aside {

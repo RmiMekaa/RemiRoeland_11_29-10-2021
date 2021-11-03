@@ -1,3 +1,28 @@
 .rating {
   display: flex;
+  gap: 5px;
+  & .star {
+    height: 15px;
+    width: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .rating {
+    gap: 7px;
+    & .star {
+      height: 22px;
+      width: 22px;
+    }
+  }  
+}
+
+@media screen and (min-width: 1200px) {
+  .rating {
+    gap: 10px;
+    & .star {
+      height: 30px;
+      width: 30px;
+    }
+  }  
 }
