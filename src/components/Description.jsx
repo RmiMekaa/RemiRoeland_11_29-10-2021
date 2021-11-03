@@ -11,11 +11,16 @@ class Description extends Component {
 
   render() {
     return (
-      <section className="housingResume">
+      <section className="description">
         <article>
           <h1>{this.props.data.title}</h1>
-          <span>{this.props.data.location}</span>
-          <div className="tags"></div>
+          <span className='location'>{this.props.data.location}</span>
+          <div className="tags">
+            {this.props.data.tags.map((tag) => (
+              <span key={tag}className='tag'>{tag}</span>
+            ))
+          }
+          </div>
         </article>
         <aside>
           <Owner name={this.props.data.host.name} picture={this.props.data.host.picture} />
