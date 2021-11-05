@@ -1,26 +1,40 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Carousel from '../components/Carousel';
-import Description from '../components/Description';
-import data from '../data/data.json';
+import Summary from '../components/Summary';
+import Owner from '../components/Owner';
+import Rating from '../components/Rating';
+import Dropdown from '../components/Dropdown';
+import { Redirect } from "react-router-dom";
+import getHousingData from "../data/dataManager";
 
-class Housing extends Component {
+class Housing extends React.Component {
   constructor(props) {
     super(props);
-    this.data = this.getData();
-    this.render();
+    this.data = getHousingData(this.props.match.params.id);
   }
 
-  getData() {
-    return data.find((housing) => housing.id === this.props.match.params.id);
-  }
-  
   render() {
+    if (this.data === null) return <Redirect to="/errorPage" />
     return (
-      <main className="main_housing">
+      <main className="housing">
         <Carousel pictures={this.data.pictures} />
-        <Description data={this.data} />
+        <div className="housing__description">
+          <Summary title={this.data.title} location={this.data.location} tags={this.data.tags} />
+          <aside className="housing__aside">
+            <Owner name={this.data.host.name} picture={this.data.host.picture} />
+            <Rating rating={this.data.rating}/>
+          </aside>
+        </div>
+          <div className="housing__dropdowns">
+            <Dropdown type="text" name="Description" text={this.data.description} />
+            <Dropdown type="list" name="Équipements" list={this.data.equipments} />
+          </div>
       </main>
     );
+  }
+
+  componentDidMount() {
+    window.scrollTo(0, 0)
   }
 }
 
