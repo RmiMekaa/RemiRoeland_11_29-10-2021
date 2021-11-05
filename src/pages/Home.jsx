@@ -5,7 +5,7 @@ import HousingsList from '../components/HousingsList';
 class Home extends Component {
   render() {
     return (
-      <main className="main_home">
+      <main className="home">
         <Banner className="banner banner__home" text="Chez vous, partout et ailleurs" />
         <HousingsList />
       </main>
