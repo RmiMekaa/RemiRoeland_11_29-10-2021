@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 class Tags extends React.Component {
 
@@ -12,5 +13,9 @@ class Tags extends React.Component {
     )
   }
 }
+
+Tags.propTypes = {
+  tags: PropTypes.array.isRequired,
+};
 
 export default Tags;

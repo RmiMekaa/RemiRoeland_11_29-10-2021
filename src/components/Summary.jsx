@@ -1,5 +1,6 @@
 import React from 'react';
 import Tags from './Tags';
+import PropTypes from 'prop-types';
 
 class Summary extends React.Component {
 
@@ -13,5 +14,10 @@ class Summary extends React.Component {
     )
   }
 }
+
+Summary.propTypes = {
+  title: PropTypes.string,
+  location: PropTypes.string
+};
 
 export default Summary;

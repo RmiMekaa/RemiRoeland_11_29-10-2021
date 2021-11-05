@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class Carousel extends React.Component {
   constructor(props) {
-    super(props); // array of strings (image link)
+    super(props);
     this.state = {
       counter : 0
     }
@@ -40,5 +41,9 @@ class Carousel extends React.Component {
     )
   }
 }
+
+Carousel.propTypes = {
+  pictures: PropTypes.array,
+};
 
 export default Carousel;

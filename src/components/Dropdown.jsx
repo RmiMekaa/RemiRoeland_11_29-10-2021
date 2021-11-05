@@ -1,11 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import arrow from '../assets/arrowUp.png';
+import PropTypes from 'prop-types';
 
-class Dropdown extends Component {
-  constructor(props) {
-    super(props);
-    this.render();
-  }
+class Dropdown extends React.Component {
 
   render() {
     return (
@@ -27,5 +24,12 @@ class Dropdown extends Component {
     );
   }
 }
+
+Dropdown.propTypes = {
+  name: PropTypes.string,
+  type: PropTypes.string,
+  text: PropTypes.string,
+  list: PropTypes.array,
+};
 
 export default Dropdown;

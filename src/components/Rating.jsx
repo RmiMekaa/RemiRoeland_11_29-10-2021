@@ -1,20 +1,17 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import starEmpty from '../assets/starEmpty.png'
 import starFull from '../assets/starFull.png'
 
 class Rating extends React.Component {
-  constructor(props) {
-    super(props); // number 0->5
-    this.setRating()
-    this.render();
-  }
 
   setRating() {
+    const rating = parseInt(this.props.rating);
     const stars = [];
-    for (let i=this.props.rating; i > 0; i--) {
+    for (let i=rating; i > 0; i--) {
       stars.push(<img className='star' key={`${'starFull'}-${i}`} src={starFull} alt="rating" />)
     }
-    for(let i=0; i < 5 - this.props.rating; i++) {
+    for(let i=0; i < 5 - rating; i++) {
       stars.push(<img className='star' key={`${'starEmpty'}-${i}`} src={starEmpty} alt="rating" />)
     }
     return stars;
@@ -25,5 +22,9 @@ class Rating extends React.Component {
     return <div className='rating'>{stars}</div>
   }
 }
+
+Rating.propTypes = {
+  rating: PropTypes.string.isRequired,
+};
 
 export default Rating;

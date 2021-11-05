@@ -4,15 +4,12 @@ import { getHousingList } from '../data/dataManager';
 
 class HousingsList extends React.Component {
 
-  constructor(){
-    super()
-    this.data = getHousingList();
-  }
-
   render() {
+    const data = getHousingList();
+
     return (
       <div className="housingsList">
-        {this.data.map(({ id, title, cover }) => (
+        {data.map(({ id, title, cover }) => (
           <Card key={id} title={title} cover={cover} id={id} />
         ))}
       </div>
