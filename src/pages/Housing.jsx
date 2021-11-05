@@ -5,29 +5,27 @@ import Owner from '../components/Owner';
 import Rating from '../components/Rating';
 import Dropdown from '../components/Dropdown';
 import { Redirect } from "react-router-dom";
-import getHousingData from "../data/dataManager";
+import { getHousingData } from "../data/dataManager";
 
 class Housing extends React.Component {
-  constructor(props) {
-    super(props);
-    this.data = getHousingData(this.props.match.params.id);
-  }
 
   render() {
-    if (this.data === null) return <Redirect to="/errorPage" />
+    const data = getHousingData(this.props.match.params.id);
+    if (data === null) return <Redirect to="/errorPage" />
+    
     return (
       <main className="housing">
-        <Carousel pictures={this.data.pictures} />
+        <Carousel pictures={data.pictures} />
         <div className="housing__description">
-          <Summary title={this.data.title} location={this.data.location} tags={this.data.tags} />
+          <Summary title={data.title} location={data.location} tags={data.tags} />
           <aside className="housing__aside">
-            <Owner name={this.data.host.name} picture={this.data.host.picture} />
-            <Rating rating={this.data.rating}/>
+            <Owner name={data.host.name} picture={data.host.picture} />
+            <Rating rating={data.rating}/>
           </aside>
         </div>
           <div className="housing__dropdowns">
-            <Dropdown type="text" name="Description" text={this.data.description} />
-            <Dropdown type="list" name="Équipements" list={this.data.equipments} />
+            <Dropdown type="text" name="Description" text={data.description} />
+            <Dropdown type="list" name="Équipements" list={data.equipments} />
           </div>
       </main>
     );

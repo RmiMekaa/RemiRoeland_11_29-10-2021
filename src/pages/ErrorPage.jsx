@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
-class ErrorPage extends Component {
+class ErrorPage extends React.Component {
   render() {
     return (
       <main className="errorPage">
@@ -15,7 +15,6 @@ class ErrorPage extends Component {
   componentDidMount() {
     window.scrollTo(0, 0)
   }
-  
 }
 
 export default ErrorPage;
