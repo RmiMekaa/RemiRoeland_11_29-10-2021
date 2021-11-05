@@ -1,6 +1,6 @@
 .dropdown {
   color: white;
-  border-radius: 5px;
+  border-radius: $radius-small;
   cursor: pointer;
   & summary {
     padding: 6px 12px;
@@ -9,7 +9,7 @@
     justify-content: space-between;
     background-color: $primary-color;
     height: 30px;
-    border-radius: 5px;
+    border-radius: $radius-small;
     font-size: 13px;
     & img {
       height: 10px;
@@ -22,7 +22,7 @@
     padding: 18px 12px;
     background-color: $light-grey;
     color: $primary-color;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 $radius-small $radius-small;
     list-style-type: none;
     & li {
       margin-bottom: 5px;
@@ -36,17 +36,17 @@
 
 @media screen and (min-width: 1200px) {
   .dropdown {
-    border-radius: 10px;
+    border-radius: $radius-medium;
     & summary {
       height: 52px;
       font-size: 18px;
-      border-radius: 10px;
+      border-radius: $radius-medium;
       & img {
         height: 15px;
       }
     }
     &__content {
-      border-radius: 0 0 10px 10px;
+      border-radius: 0 0 $radius-medium $radius-medium;
       padding: 30px 20px;
       font-size: 18px;
     }

@@ -11,7 +11,7 @@
     color: white;
     height: 18px;
     padding: 0 24px;
-    border-radius: 5px;
+    border-radius: $radius-small;
     background-color: $primary-color;
   }
 }
@@ -23,7 +23,7 @@
       font-size: 14px;
       height: 25px;
       padding: 0 35px;
-      border-radius: 10px;
+      border-radius: $radius-medium;
     }
   }
 }
