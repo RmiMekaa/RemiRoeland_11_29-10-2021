@@ -11,6 +11,11 @@ class ErrorPage extends Component {
       </main>
     );
   }
+
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+  
 }
 
 export default ErrorPage;
