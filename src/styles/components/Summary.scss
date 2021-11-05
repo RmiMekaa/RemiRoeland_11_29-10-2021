@@ -1,0 +1,23 @@
+.summary {
+  color: $primary-color;
+  &__heading {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  &__location {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .summary {
+    width: 70%;
+    &__heading {
+      font-size: 36px;
+    }
+    &__location {
+      font-size: 18px;
+    }
+  }
+}  

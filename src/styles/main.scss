@@ -7,11 +7,12 @@
 @import './components/Carousel.scss';
 @import './components/Dropdown.scss';
 @import './components/Owner.scss';
-@import './components/Description.scss';
+@import './components/Summary.scss';
 @import './components/Rating.scss';
+@import './components/Tags.scss';
 @import './pages/About.scss';
 @import './pages/ErrorPage.scss';
-
+@import './pages/Housing.scss';
 
 * {
   box-sizing: border-box;
