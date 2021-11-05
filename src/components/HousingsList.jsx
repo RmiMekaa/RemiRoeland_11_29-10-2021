@@ -1,12 +1,18 @@
-import React, { Component } from 'react';
-import data from '../data/data.json';
+import React from 'react';
 import Card from './Card';
+import { getHousingList } from '../data/dataManager';
 
-class HousingsList extends Component {
+class HousingsList extends React.Component {
+
+  constructor(){
+    super()
+    this.data = getHousingList();
+  }
+
   render() {
     return (
       <div className="housingsList">
-        {data.map(({ id, title, cover }) => (
+        {this.data.map(({ id, title, cover }) => (
           <Card key={id} title={title} cover={cover} id={id} />
         ))}
       </div>
