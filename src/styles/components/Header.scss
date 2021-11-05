@@ -3,15 +3,15 @@
   justify-content: space-between;
   align-items: center;
   & img {
-    height: 43px;
+    height: 2.6875rem;
   }
   & nav {
     display: flex;
-    gap: 10px;
+    gap: .625rem;
   }
   &__link {
     text-decoration: none;
-    font-size: 12px;
+    font-size: .75rem;
     color: $primary-color;
     &:hover {
       text-decoration: underline;
@@ -21,12 +21,12 @@
 
 @media screen and (min-width: 768px) {
   .header {
-    height: 68px;
+    height: 4.25rem;
     & nav {
-      gap: 57px;
+      gap: 3.5625rem;
     }
     &__link {
-      font-size: 18px;
+      font-size: 1.125rem;
     }
   }
 }
@@ -34,10 +34,10 @@
 @media screen and (min-width: 1200px) {
   .header {
     &__link {
-      font-size: 24px;
+      font-size: 1.5rem;
     }
     & img {
-      height: 62px;
+      height: 3.875rem;
     }
   }
 }

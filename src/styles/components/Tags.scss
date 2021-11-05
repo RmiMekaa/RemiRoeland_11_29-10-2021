@@ -1,16 +1,16 @@
 .tags {
-  margin-top: 10px;
+  margin-top: .625rem;
   display: flex;
   flex-wrap: wrap;
-  row-gap: 5px;
-  column-gap: 10px;
+  row-gap: .3125rem;
+  column-gap: .625rem;
   & .tag {
     display: flex;
     align-items: center;
-    font-size: 10px;
+    font-size: .625rem;
     color: white;
-    height: 18px;
-    padding: 0 24px;
+    height: 1.125rem;
+    padding: 0 1.5rem;
     border-radius: $radius-small;
     background-color: $primary-color;
   }
@@ -18,11 +18,11 @@
 
 @media screen and (min-width: 1200px) {
   .tags {
-    margin-top: 20px;
+    margin-top: 1.25rem;
     & .tag {
-      font-size: 14px;
-      height: 25px;
-      padding: 0 35px;
+      font-size: .875rem;
+      height: 1.5625rem;
+      padding: 0 2.1875rem;
       border-radius: $radius-medium;
     }
   }

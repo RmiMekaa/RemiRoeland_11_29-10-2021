@@ -3,29 +3,29 @@
   border-radius: $radius-small;
   cursor: pointer;
   & summary {
-    padding: 6px 12px;
+    padding: .375rem .75rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: $primary-color;
-    height: 30px;
+    height: 1.875rem;
     border-radius: $radius-small;
-    font-size: 13px;
+    font-size: .8125rem;
     & img {
-      height: 10px;
+      height: .625rem;
       transform: rotate(180deg);
     }
   }
   &__content {
-    font-size: 12px;
+    font-size: .75rem;
     margin: 0;
-    padding: 18px 12px;
+    padding: 1.125rem .75rem;
     background-color: $light-grey;
     color: $primary-color;
     border-radius: 0 0 $radius-small $radius-small;
     list-style-type: none;
     & li {
-      margin-bottom: 5px;
+      margin-bottom: .3125rem;
     }
   }
 }
@@ -38,17 +38,17 @@
   .dropdown {
     border-radius: $radius-medium;
     & summary {
-      height: 52px;
-      font-size: 18px;
+      height: 3.25rem;
+      font-size: 1.125rem;
       border-radius: $radius-medium;
       & img {
-        height: 15px;
+        height: .9375rem;
       }
     }
     &__content {
       border-radius: 0 0 $radius-medium $radius-medium;
-      padding: 30px 20px;
-      font-size: 18px;
+      padding: 1.875rem 1.25rem;
+      font-size: 1.125rem;
     }
   }
 }

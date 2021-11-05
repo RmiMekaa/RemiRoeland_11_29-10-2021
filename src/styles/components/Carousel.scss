@@ -1,12 +1,12 @@
 .carousel {
   position: relative;
-  margin-top: 20px;
+  margin-top: 1.25rem;
   display: block;
   width: 100%;
-  height: 255px;
+  height: 15.9375rem;
   border-radius: $radius-medium;
   background-color: $primary-color;
-  margin-bottom: 15px;
+  margin-bottom: .9375rem;
   & img {
     object-fit: cover;
     width: 100%;
@@ -17,23 +17,23 @@
 
 @media screen and (min-width: 1200px) {
   .carousel {
-    height: 415px;
-    margin-bottom: 30px;
+    height: 25.9375rem;
+    margin-bottom: 1.875rem;
   }
 }
 
 // ----- CONTROLS ----- //
 .controls {
   position: absolute;
-  padding: 0 6px;
+  padding: 0 .375rem;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   & .button {
-    height: 20px;
-    width: 12px;
+    height: 1.25rem;
+    width: .75rem;
     border: none;
     background: none;
     background-size: contain;
@@ -50,26 +50,26 @@
     display: none;
     color: white;
     align-self: flex-end;
-    padding-bottom: 25px;
-    font-size: 18px;
+    padding-bottom: 1.5625rem;
+    font-size: 1.125rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   .controls {
-    padding: 0 12px;
+    padding: 0 .75rem;
     & .button {
-      height: 40px;
-      width: 24px;
+      height: 2.5rem;
+      width: 1.5rem;
     }
   }
 }
 @media screen and (min-width: 1200px) {
   .controls {
-    padding: 0 24px;
+    padding: 0 1.5rem;
     & .button {
-    height: 80px;
-    width: 48px;
+    height: 5rem;
+    width: 3rem;
     }
     &__counter {
       display: block;

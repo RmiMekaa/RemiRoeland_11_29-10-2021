@@ -1,59 +1,59 @@
 .errorPage {
-  padding-top: 195px;
+  padding-top: 12.1875rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: $primary-color;
   &__heading {
-    font-size: 96px;
+    font-size: 6rem;
     font-weight: 700;
   }
   &__text {
-    margin-top: 10px;
-    font-size: 18px;
-    width: 260px;
+    margin-top: .625rem;
+    font-size: 1.125rem;
+    width: 16.25rem;
     text-align: center;
   }
   &__link {
-    font-size: 14px;
-    margin-top: 133px;
+    font-size: .875rem;
+    margin-top: 8.3125rem;
     color: $primary-color;
   }
 }
 
 @media screen and (min-width: 768px) {
   .errorPage {
-    padding-top: 60px;
+    padding-top: 3.75rem;
     &__heading {
-      font-size: 150px;
+      font-size: 9.375rem;
     }
     &__text {
-      margin-top: 66px;
-      font-size: 32px;
+      margin-top: 4.125rem;
+      font-size: 2rem;
       width: auto;
       text-align: center;
     }
     &__link {
-      font-size: 18px;
+      font-size: 1.125rem;
     }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .errorPage {
-    padding-top: 30px;
+    padding-top: 1.875rem;
     &__heading {
-      font-size: 288px;
+      font-size: 18rem;
     }
     &__text {
-      margin-top: 66px;
-      font-size: 36px;
+      margin-top: 4.125rem;
+      font-size: 2.25rem;
       width: auto;
       text-align: center;
     }
     &__link {
-      font-size: 18px;
+      font-size: 1.125rem;
     }
   }
 }
