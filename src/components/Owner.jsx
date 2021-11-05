@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Owner extends Component {
+class Owner extends React.Component {
   constructor(props) {
     super(props);
     this.name = this.props.name.split(' ');
-    this.render();
   }
 
   render() {
@@ -16,5 +15,6 @@ class Owner extends Component {
     );
   }
 }
+
 
 export default Owner;
