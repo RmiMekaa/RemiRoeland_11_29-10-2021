@@ -8,7 +8,6 @@ class Carousel extends React.Component {
     }
     this.nextMedia = this.nextMedia.bind(this);
     this.prevMedia = this.prevMedia.bind(this);
-    this.render();
   }
 
   render() {
@@ -39,10 +38,6 @@ class Carousel extends React.Component {
     ) : (
       this.setState({ counter : 0 })
     )
-  }
-
-  componentDidMount() {
-    window.scrollTo(0, 0)
   }
 }
 
