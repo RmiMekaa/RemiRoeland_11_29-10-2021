@@ -14,16 +14,10 @@ ReactDOM.render(
     <Router>
       <Header />
       <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
+        <Route exact path="/"      component={Home} />
         <Route path="/Housing/:id" component={Housing} />
-        <Route path="/About">
-          <About />
-        </Route>
-        <Route>
-          <ErrorPage />
-        </Route>
+        <Route path="/About"       component={About} />
+        <Route component={ErrorPage} />
       </Switch>
       <Footer />
     </Router>
