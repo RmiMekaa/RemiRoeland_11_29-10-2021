@@ -27,12 +27,21 @@ body {
   font-weight: 500;
 }
 
-h1,
-h2,
-h3 {
+h1,h2,h3 {
   margin: 0;
   padding: 0;
 }
+
+// Fix footer to the bottom ↓
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex-grow: 1;
+}
+
 
 @media screen and (min-width: 768px) {
   body {
@@ -46,12 +55,3 @@ h3 {
   }
 }
 
-// Fix footer to the bottom ↓
-#root {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-main {
-  flex-grow: 1;
-}
