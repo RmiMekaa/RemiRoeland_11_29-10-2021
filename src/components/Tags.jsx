@@ -15,7 +15,7 @@ class Tags extends React.Component {
 }
 
 Tags.propTypes = {
-  tags: PropTypes.array.isRequired,
+  tags: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default Tags;

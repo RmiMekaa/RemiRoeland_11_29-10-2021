@@ -23,10 +23,10 @@ class Housing extends React.Component {
             <Rating rating={data.rating}/>
           </aside>
         </div>
-          <div className="housing__dropdowns">
-            <Dropdown type="text" name="Description" text={data.description} />
-            <Dropdown type="list" name="Équipements" list={data.equipments} />
-          </div>
+        <div className="housing__dropdowns">
+          <Dropdown type="text" name="Description" text={data.description} />
+          <Dropdown type="list" name="Équipements" list={data.equipments} />
+        </div>
       </main>
     );
   }

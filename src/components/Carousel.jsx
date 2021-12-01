@@ -43,7 +43,7 @@ class Carousel extends React.Component {
 }
 
 Carousel.propTypes = {
-  pictures: PropTypes.array,
+  pictures: PropTypes.arrayOf(PropTypes.string), // Image Links
 };
 
 export default Carousel;

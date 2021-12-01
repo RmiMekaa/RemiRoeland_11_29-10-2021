@@ -17,7 +17,8 @@ class Summary extends React.Component {
 
 Summary.propTypes = {
   title: PropTypes.string,
-  location: PropTypes.string
+  location: PropTypes.string,
+  tags: PropTypes.arrayOf(PropTypes.string)
 };
 
 export default Summary;

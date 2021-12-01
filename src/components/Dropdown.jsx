@@ -29,7 +29,7 @@ Dropdown.propTypes = {
   name: PropTypes.string,
   type: PropTypes.string,
   text: PropTypes.string,
-  list: PropTypes.array,
+  list: PropTypes.arrayOf(PropTypes.string)
 };
 
 export default Dropdown;
