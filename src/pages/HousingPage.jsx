@@ -7,12 +7,12 @@ import Dropdown from '../components/Dropdown';
 import { Redirect } from "react-router-dom";
 import { getHousingData } from "../data/dataManager";
 
-class Housing extends React.Component {
+class HousingPage extends React.Component {
 
   render() {
     const data = getHousingData(this.props.match.params.id);
     if (data === null) return <Redirect to="/errorPage" />
-    
+
     return (
       <main className="housing">
         <Carousel pictures={data.pictures} />
@@ -20,7 +20,7 @@ class Housing extends React.Component {
           <Summary title={data.title} location={data.location} tags={data.tags} />
           <aside className="housing__aside">
             <Owner name={data.host.name} picture={data.host.picture} />
-            <Rating rating={data.rating}/>
+            <Rating rating={data.rating} />
           </aside>
         </div>
         <div className="housing__dropdowns">
@@ -30,10 +30,10 @@ class Housing extends React.Component {
       </main>
     );
   }
-
+  Page
   componentDidMount() {
     window.scrollTo(0, 0)
   }
 }
 
-export default Housing;
+export default HousingPage;

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Banner from '../components/Banner';
 import HousingsList from '../components/HousingsList';
 
-class Home extends Component {
+class HomePage extends Component {
   render() {
     return (
       <main className="home">
@@ -14,7 +14,7 @@ class Home extends Component {
 
   componentDidMount() {
     window.scrollTo(0, 0)
-  }  
+  }
 }
 
-export default Home;
+export default HomePage;

@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from './components/Header';
-import Home from './pages/Home';
-import Housing from './pages/Housing';
-import About from './pages/About';
+import HomePage from './pages/HomePage';
+import HousingPage from './pages/HousingPage';
+import AboutPage from './pages/AboutPage';
 import ErrorPage from './pages/ErrorPage';
 import Footer from './components/Footer';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
@@ -14,9 +14,9 @@ ReactDOM.render(
     <Router>
       <Header />
       <Switch>
-        <Route exact path="/"      component={Home} />
-        <Route path="/Housing/:id" component={Housing} />
-        <Route path="/About"       component={About} />
+        <Route exact path="/" component={HomePage} />
+        <Route path="/Housing/:id" component={HousingPage} />
+        <Route path="/About" component={AboutPage} />
         <Route component={ErrorPage} />
       </Switch>
       <Footer />
