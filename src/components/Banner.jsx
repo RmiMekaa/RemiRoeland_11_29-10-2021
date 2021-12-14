@@ -4,7 +4,12 @@ import PropTypes from 'prop-types';
 class Banner extends React.Component {
 
   render() {
-    return <div className={this.props.className}>{this.props.text ? <h1>{this.props.text}</h1> : null}</div>;
+    const { className, text } = this.props
+    return (
+      <div className={className}>
+        {text ? <h1>{text}</h1> : null}
+      </div>
+    )
   }
 }
 

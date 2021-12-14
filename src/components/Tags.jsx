@@ -4,10 +4,11 @@ import PropTypes from 'prop-types';
 class Tags extends React.Component {
 
   render() {
+    const { tags } = this.props;
     return (
       <div className="tags">
-        {this.props.tags.map((tag) => (
-          <span key={tag}className='tag'>{tag}</span>
+        {tags.map((tag) => (
+          <span key={tag} className='tag'>{tag}</span>
         ))}
       </div>
     )

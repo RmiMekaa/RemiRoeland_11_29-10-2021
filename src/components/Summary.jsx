@@ -5,11 +5,12 @@ import PropTypes from 'prop-types';
 class Summary extends React.Component {
 
   render() {
+    const { title, location, tags } = this.props;
     return (
       <section className="summary">
-        <h1 className='summary__title'>{this.props.title}</h1>
-        <span className='summary__location'>{this.props.location}</span>
-        <Tags tags={this.props.tags}/>
+        <h1 className='summary__title'>{title}</h1>
+        <span className='summary__location'>{location}</span>
+        <Tags tags={tags} />
       </section>
     )
   }
