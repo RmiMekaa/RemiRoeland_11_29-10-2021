@@ -8,8 +8,8 @@ class Header extends Component {
       <header className="header">
         <Link to="/" className="header__link"><img src={logo} alt="logo" /></Link>
         <nav>
-          <Link to="/" className="header__link">ACCUEIL</Link>
-          <Link to="/About" className="header__link">À PROPOS</Link>
+          <Link to="/" className="header__link">Accueil</Link>
+          <Link to="/About" className="header__link">À Propos</Link>
         </nav>
       </header>
     );
