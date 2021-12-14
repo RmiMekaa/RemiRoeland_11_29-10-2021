@@ -3,7 +3,7 @@ import Carousel from '../components/Carousel';
 import Summary from '../components/Summary';
 import Owner from '../components/Owner';
 import Rating from '../components/Rating';
-import Dropdown from '../components/Dropdown';
+import Dropdowns from '../components/Dropdowns';
 import { Redirect } from "react-router-dom";
 import { getHousingData } from "../data/dataManager";
 
@@ -23,14 +23,11 @@ class HousingPage extends React.Component {
             <Rating rating={data.rating} />
           </aside>
         </div>
-        <div className="housing__dropdowns">
-          <Dropdown type="text" name="Description" text={data.description} />
-          <Dropdown type="list" name="Équipements" list={data.equipments} />
-        </div>
+        <Dropdowns description={data.description} equipments={data.equipments} />
       </main>
     );
   }
-  Page
+
   componentDidMount() {
     window.scrollTo(0, 0)
   }
