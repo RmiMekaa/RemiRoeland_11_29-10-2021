@@ -1,0 +1,25 @@
+.housingDescription {  
+  display: flex;
+  flex-wrap: wrap;
+  & aside {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .housingDescription {
+    display: flex;
+    flex-wrap: wrap;
+    & aside {
+      flex-direction: column;
+      align-items: flex-end;
+      margin-top: 0;
+      width: 30%;
+    }
+  }
+}

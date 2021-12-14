@@ -1,9 +1,6 @@
 import React from 'react';
 import Carousel from '../components/Carousel';
-import Summary from '../components/Summary';
-import Owner from '../components/Owner';
-import Rating from '../components/Rating';
-import Dropdowns from '../components/Dropdowns';
+import HousingDescription from '../components/HousingDescription';
 import { Redirect } from "react-router-dom";
 import { getHousingData } from "../data/dataManager";
 
@@ -16,14 +13,7 @@ class HousingPage extends React.Component {
     return (
       <main className="housing">
         <Carousel pictures={data.pictures} />
-        <div className="housing__description">
-          <Summary title={data.title} location={data.location} tags={data.tags} />
-          <aside className="housing__aside">
-            <Owner name={data.host.name} picture={data.host.picture} />
-            <Rating rating={data.rating} />
-          </aside>
-        </div>
-        <Dropdowns description={data.description} equipments={data.equipments} />
+        <HousingDescription data={data} />
       </main>
     );
   }
