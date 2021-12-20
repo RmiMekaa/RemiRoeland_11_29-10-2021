@@ -7,8 +7,6 @@ class Carousel extends React.Component {
     this.state = {
       counter: 0
     }
-    this.nextMedia = this.nextMedia.bind(this);
-    this.prevMedia = this.prevMedia.bind(this);
   }
 
   render() {
@@ -17,9 +15,9 @@ class Carousel extends React.Component {
       <div className="carousel">
         {pictures.length > 1 ? (
           <div className="controls">
-            <button className="button button__prev" onClick={this.prevMedia}></button>
+            <button className="button button__prev" onClick={this.prevMedia.bind(this)}></button>
             <span className="controls__counter">{this.state.counter + 1}/{pictures.length}</span>
-            <button className="button button__next" onClick={this.nextMedia}></button>
+            <button className="button button__next" onClick={this.nextMedia.bind(this)}></button>
           </div>
         ) : null}
         <img src={pictures[this.state.counter]} alt='' />
