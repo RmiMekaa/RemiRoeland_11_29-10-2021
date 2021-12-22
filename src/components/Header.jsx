@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 
 class Header extends Component {
@@ -8,8 +8,8 @@ class Header extends Component {
       <header className="header">
         <Link to="/" className="header__link"><img src={logo} alt="logo" /></Link>
         <nav>
-          <Link to="/" className="header__link">Accueil</Link>
-          <Link to="/About" className="header__link">À Propos</Link>
+          <NavLink exact to="/" className="header__link" activeClassName="header__link--active">Accueil</NavLink>
+          <NavLink to="/About" className="header__link" activeClassName="header__link--active">À Propos</NavLink>
         </nav>
       </header>
     );
