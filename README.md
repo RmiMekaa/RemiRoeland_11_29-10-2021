@@ -12,7 +12,14 @@
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=RmiMekaa_RemiRoeland_11_29-10-2021&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=RmiMekaa_RemiRoeland_11_29-10-2021)
 
 ## Project objectives
- - Create an app with React
+ - Create an app with React and React Router
+
+## Technical Constraints
+ - The pictures gallery in apartments pages must loop
+ - If the gallery only contains one picture, the previous and next buttons should not be displayed
+ - The gallery must display a counter of pictures
+ - Dropdowns must be closed by default
+ - When the user click on a dropdown, it toggles his Open/Close statement
 
 ## Resources provided
  - [Figma](https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design-Kasa-FR?node-id=4%3A1)
