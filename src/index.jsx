@@ -15,6 +15,7 @@ ReactDOM.render(
       <Header />
       <Switch>
         <Route path="/RemiRoeland_11_29-10-2021/" exact >
+          {/* Handles github page url */}
           <Redirect to="/" />
         </Route>
         <Route exact path="/" component={HomePage} />
