@@ -15,6 +15,9 @@
  - Create an app with React and React Router
 
 ## Technical Constraints
+ - Only use class components for this discovery of React
+
+## Functionnal Constraints
  - The pictures gallery in apartments pages must loop
  - If the gallery only contains one picture, the previous and next buttons should not be displayed
  - The gallery must display a counter of pictures
