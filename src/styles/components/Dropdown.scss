@@ -1,11 +1,7 @@
 .dropdown {
   color: white;
   border-radius: $radius-small;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -ms-user-select: none;
+
   & summary {
     padding: .375rem .75rem;
     display: flex;
@@ -15,11 +11,15 @@
     height: 1.875rem;
     border-radius: $radius-small;
     font-size: .8125rem;
+    user-select: none;
+    cursor: pointer;
+
     & img {
       height: .625rem;
       transform: rotate(180deg);
     }
   }
+
   &__content {
     font-size: .75rem;
     margin: 0;
@@ -28,10 +28,15 @@
     color: $primary-color;
     border-radius: 0 0 $radius-small $radius-small;
     list-style-type: none;
+
     & li {
       margin-bottom: .3125rem;
     }
   }
+}
+
+.dropdown summary:hover {
+  background-color: adjust-hue($primary-color, 8deg);
 }
 
 .dropdown[open] summary img {
@@ -41,14 +46,17 @@
 @media screen and (min-width: 1200px) {
   .dropdown {
     border-radius: $radius-medium;
+
     & summary {
       height: 3.25rem;
       font-size: 1.125rem;
       border-radius: $radius-medium;
+
       & img {
         height: .9375rem;
       }
     }
+
     &__content {
       border-radius: 0 0 $radius-medium $radius-medium;
       padding: 1.875rem 1.25rem;
