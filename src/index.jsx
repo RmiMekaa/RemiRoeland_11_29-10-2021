@@ -6,25 +6,21 @@ import HousingPage from './pages/HousingPage';
 import AboutPage from './pages/AboutPage';
 import ErrorPage from './pages/ErrorPage';
 import Footer from './components/Footer';
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom'; //Use HashRouter instead of BrowserRouter to handle routing in github page.
 import './styles/main.scss';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
+    <HashRouter>
       <Header />
       <Switch>
-        <Route path="/RemiRoeland_11_29-10-2021/" exact >
-          {/* Handles github page url */}
-          <Redirect to="/" />
-        </Route>
         <Route exact path="/" component={HomePage} />
         <Route path="/Housing/:id" component={HousingPage} />
         <Route path="/About" component={AboutPage} />
         <Route component={ErrorPage} />
       </Switch>
       <Footer />
-    </Router>
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
