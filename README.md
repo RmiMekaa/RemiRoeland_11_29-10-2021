@@ -11,6 +11,8 @@
 [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=RmiMekaa_RemiRoeland_11_29-10-2021&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=RmiMekaa_RemiRoeland_11_29-10-2021)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=RmiMekaa_RemiRoeland_11_29-10-2021&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=RmiMekaa_RemiRoeland_11_29-10-2021)
 
+See deployment: [Kasa](https://rmimekaa.github.io/RemiRoeland_11_29-10-2021/)
+
 ## Project objectives
  - Create an app with React and React Router
 
@@ -27,11 +29,6 @@
 ## Resources provided
  - [Figma](https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design-Kasa-FR?node-id=4%3A1)
  - [Coding guidelines](https://course.oc-static.com/projects/Front-End+V2/P9+React+1/Coding+guidelines+Kasa+FR.pdf)
-
-## Documentation
-
-Coming Soon...
-<!-- [Kasa](https://rmimekaa.github.io/RemiRoeland_11_29-10-2021/) - made with [JSDoc](https://jsdoc.app/index.html). -->
 
 ------------------
 
