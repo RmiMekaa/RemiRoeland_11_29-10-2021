@@ -20,6 +20,7 @@ See deployment: [Kasa](https://rmimekaa.github.io/RemiRoeland_11_29-10-2021/)
  - Only use class components for this discovery of React
 
 ## Functionnal Constraints
+ - Wrong URLs must redirect to a 404 page
  - The pictures gallery in apartments pages must loop
  - If the gallery only contains one picture, the previous and next buttons should not be displayed
  - The gallery must display a counter of pictures
