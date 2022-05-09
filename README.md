@@ -1,6 +1,6 @@
 # OpenClassrooms - Project 11
 **Project Name: Kasa**  
-**Project Title: "Create a web application with React and React Router"**
+**Project Title: "Create a web application with React and React Router"**  
 **Test it ! : [Kasa](https://rmimekaa.github.io/RemiRoeland_11_29-10-2021/)**  
 
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=RmiMekaa_RemiRoeland_11_29-10-2021&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=RmiMekaa_RemiRoeland_11_29-10-2021)
